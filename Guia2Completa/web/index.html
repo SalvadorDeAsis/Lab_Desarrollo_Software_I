@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+
+<head>
+    <title>Guia2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="radio"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>TIENDA DE COMPUTACION</h1>
+    <h2>Formulario Productos:</h2>
+    <form action="ServletPrincipal" method="post">
+        <label for="nombre_product">Nombre del producto:</label>
+        <input type="text" name="nombre_product" id="nombre_product" size="30"><br>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" id="modelo" size="30"><br>
+
+        <label for="fabricante">Fabricante:</label>
+        <input type="text" name="fabricante" id="fabricante" size="30"><br>
+
+        <label for="tv">Tiempo de vida:</label>
+        <input type="text" name="tv" id="tv" size="30"><br>
+
+        <label for="garantia">Garantía:</label>
+        <input type="text" name="garantia" id="garantia" size="30"><br>
+
+        <h3>Formulario Productos:</h3>
+
+        <label>Opinión de este sitio web:</label><br>
+        <input type="radio" name="opinion" value="buena" id="buena"><label for="buena">Buena</label><br>
+        <input type="radio" name="opinion" value="regular" id="regular"><label for="regular">Regular</label><br>
+        <input type="radio" name="opinion" value="mala" id="mala"><label for="mala">Mala</label><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea name="comentarios" id="comentarios" rows="6" cols="40"></textarea><br>
+
+        <input type="submit" name="botonenviar" value="ENVIAR">
+        <input type="reset" name="botonlimpiar" value="LIMPIAR">
+    </form>
+
+</body>
+
+</html>
